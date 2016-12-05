@@ -30,12 +30,12 @@
             <div class="col-md-6">Дано натуральное число n. Можно ли представить его в виде суммы двух квадратов натуральных чисел?</br>
                 а) указать пару x, y таких натуральных чисел, что n = x^2 + y^2
             </div>
-            <div class="col-md-2"><input ng-pattern="/^[0-9]{1,7}$/" ng-model="taskTwo" type="text" name="value2" placeholder="Enter number..."/></div>
+            <div class="col-md-2"><input ng-pattern="/^[0-9]{1,7}$/" class="thumbnail" ng-model="taskTwo" type="text" name="value2" placeholder="Enter number..."/></div>
             <div id="task2" class="thumbnail col-md-2">{{task.congruenceOfSquares(taskTwo)}}</div>
         </div>
         <div class="task-3 row">
             <div class="col-md-6">б) указать all pairs x, y таких натуральных чисел, что n = x^2 + y^2, x ≥ y</div>
-            <div class="col-md-2"><input ng-pattern="/^[0-9]{1,7}$/" ng-model="taskThree" type="text" name="value2" placeholder="Enter number..."/></div>
+            <div class="col-md-2"><input ng-pattern="/^[0-9]{1,7}$/" class="thumbnail" ng-model="taskThree" type="text" name="value2" placeholder="Enter number..."/></div>
             <div id="task3" class="thumbnail col-md-2">{{task.allSquaredPairs(taskThree)}}</div>
         </div>
     </div>
