@@ -1,0 +1,17 @@
+{
+  "name": "chat-example",
+  "version": "0.0.0",
+  "description": "test-node-app",
+  "main": "server.js",
+  "repository": "",
+  "author": "me",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "express": "^3.2.6"
+  },
+  "devDependencies": {
+    "eslint": "^3.11.1",
+    "gulp": "^3.9.1",
+    "gulp-eslint": "^3.0.1"
+  }
+}
