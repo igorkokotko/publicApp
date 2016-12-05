@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en" ng-app>
+  <head>
+    <title>Node-app</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/main.css" type="text/css" />
+  </head>
+  <body>
+     <nav class="navbar navbar-inverse navbar-static-top">
+        <div class="container">
+            <a class="navbar-brand" href="/">Express HTML</a>
+            <ul class="nav navbar-nav">
+                <li class="active">
+                    <a href="/">Index.html</a>
+                </li>
+                <li>
+                    <a href="/part.html">Part</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    
+    
+    <div class="container-fluid">
+        <div class="task-1 row">
+            <div class="col-md-8">Дано целое число m > 1. Получить наибольшее целое k, при котором 4^k < m</div>
+            <div id="task1" class="thumbnail col-md-2"></div>
+        </div>
+        <div class="task-2 row">
+            <div class="col-md-8">Дано натуральное число n. Можно ли представить его в виде суммы двух квадратов натуральных чисел?</br>
+                а) указать пару x, y таких натуральных чисел, что n = x^2 + y^2
+            </div>
+            <div id="task2" class="thumbnail col-md-2"></div>
+            <div class="col-md-8">б) указать all pairs x, y таких натуральных чисел, что n = x^2 + y^2, x ≥ y</div>
+            <div id="task3" class="thumbnail col-md-2"></div>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.9/angular.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+  </body>
+</html>
