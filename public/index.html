@@ -22,18 +22,23 @@
     </nav>
     
     
-    <div class="container-fluid">
+   <div class="container-fluid">
         <div class="task-1 row">
-            <div class="col-md-8">Дано целое число m > 1. Получить наибольшее целое k, при котором 4^k < m</div>
-            <div id="task1" class="thumbnail col-md-2"></div>
+            <div class="col-md-6">Дано целое число m > 1. Получить наибольшее целое k, при котором 4^k < m</div>
+            <div class="col-md-2"><input ng-pattern="/^[0-9]{1,7}$/" class="thumbnail" ng-model="taskOne" type="text" name="value1" placeholder="Enter number..."/></div>
+            <div id="task1" class="thumbnail col-md-2">{{task.onPow(taskOne)}}</div>
         </div>
         <div class="task-2 row">
-            <div class="col-md-8">Дано натуральное число n. Можно ли представить его в виде суммы двух квадратов натуральных чисел?</br>
+            <div class="col-md-6">Дано натуральное число n. Можно ли представить его в виде суммы двух квадратов натуральных чисел?</br>
                 а) указать пару x, y таких натуральных чисел, что n = x^2 + y^2
             </div>
-            <div id="task2" class="thumbnail col-md-2"></div>
-            <div class="col-md-8">б) указать all pairs x, y таких натуральных чисел, что n = x^2 + y^2, x ≥ y</div>
-            <div id="task3" class="thumbnail col-md-2"></div>
+            <div class="col-md-2"><input ng-pattern="/^[0-9]{1,7}$/" ng-model="taskTwo" type="text" name="value2" placeholder="Enter number..."/></div>
+            <div id="task2" class="thumbnail col-md-2">{{task.congruenceOfSquares(taskTwo)}}</div>
+        </div>
+        <div class="task-3 row">
+            <div class="col-md-6">б) указать all pairs x, y таких натуральных чисел, что n = x^2 + y^2, x ≥ y</div>
+            <div class="col-md-2"><input ng-pattern="/^[0-9]{1,7}$/" ng-model="taskThree" type="text" name="value2" placeholder="Enter number..."/></div>
+            <div id="task3" class="thumbnail col-md-2">{{task.allSquaredPairs(taskThree)}}</div>
         </div>
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
