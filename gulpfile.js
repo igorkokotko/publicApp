@@ -12,3 +12,7 @@ gulp.task('lint', function(){
 gulp.task('default', ['lint'], function () {
     gulp.watch('js/main.js', ['lint']);
 });
+
+gulp.doneCallback = function(err) {
+    process.exit(err ? 1 : 0);
+};
